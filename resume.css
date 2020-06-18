@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.profile-container {
+    display:flex;
+    justify-content: space-between;
+    height: 100%;    
+}
+.profile-detail {
+    flex:30%;
+    max-width: 30%;
+    height: 100%;
+}
+.work-detail{
+    flex:70%;
+    max-width: 70%;
+    margin-left: 25px;
+    line-height: 30px;
+    height: 100%;
+}
+i {
+    padding:0 15px;
+}
+.profile-pic {
+    background-color: rgb(39, 63, 63);
+
+}
+img {
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    margin:auto;
+    padding:20px;
+}
+.imagetext {
+    text-align: center;
+    color:white;
+    font-style: italic;
+    font-size: larger;
+}
+.profile-content {
+    padding:10px;
+    background-color: darkslategrey;
+    height: auto;
+    
+}
+.protext {
+    font-size: x-large;
+    font-family: serif;
+    font-style: italic;
+    color:white;
+    text-transform: uppercase;
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: large;
+}
+.year {
+    margin-bottom: 20px;
+    flex:30%;
+}
+ .dl {
+     margin: 0;
+     flex: 70%;
+     text-align: left;
+     font-size: large;
+     text-transform: capitalize;
+ }
+h3 {
+    font-size: x-large;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: monospace;
+}
+@media screen and (max-width:800px){
+    .value,.dl {
+        font-size: small;
+    }
+    .protext,h3 {
+        font-size: large;
+    }
+    
+}
