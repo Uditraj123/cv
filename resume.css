@@ -5,17 +5,16 @@
 }
 .profile-container {
     display:flex;
-    justify-content: space-between;
-    height: 100%;    
+    justify-content: space-between;   
 }
 .profile-detail {
-    flex:30%;
-    max-width: 30%;
+    flex:40%;
+    max-width: 40%;
     height: 100%;
 }
 .work-detail{
-    flex:70%;
-    max-width: 70%;
+    flex:60%;
+    max-width: 60%;
     margin-left: 25px;
     line-height: 30px;
     height: 100%;
@@ -28,8 +27,8 @@ i {
 
 }
 img {
-    width:100%;
-    height:100%;
+    width:90%;
+    height:90%;
     border-radius: 50%;
     margin:auto;
     padding:20px;
@@ -43,7 +42,9 @@ img {
 .profile-content {
     padding:10px;
     background-color: darkslategrey;
-    height: auto;
+    height:100%;
+    word-wrap:break-word;
+    word-break: keep-all;
     
 }
 .protext {
@@ -78,10 +79,38 @@ h3 {
 }
 @media screen and (max-width:800px){
     .value,.dl {
-        font-size: small;
+        font-size: smaller;
     }
-    .protext,h3 {
-        font-size: large;
+    .protext,h3,p {
+        font-size: smaller;
+    
+    }
+    .profile-container{
+        padding:0 5px;
+;
+    
+    }
+    .profile-content{
+        height: 100%;
+        line-height: 25px;
+    }
+    .imagetext h1{
+        font-size: smaller;
+    }
+    i {
+        padding: 0 5px;
+    }
+    .work-detail{
+        line-height:20px;
+    }
+    h3{
+        font-size: smaller;
+    }
+    img{
+        padding: 3px;
     }
     
+}
+html{
+    height:300px;
 }
