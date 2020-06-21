@@ -45,7 +45,7 @@ section .box div span{
     
 }
 section video{
-    filter: blur(20px);
+    filter: blur(10px);
     width: 100%;height:100%;
 }
 section .box div span video{
