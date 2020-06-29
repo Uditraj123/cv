@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 34, 91);
+    width:100vw;
+    height: 100vh;
+}
+.quiz_container{
+    /*background-color: red;*/
+    width:400px;
+
+}
+.quiz1_container input,.quiz1_container button{
+    display: block;
+    width: 100%;
+}
+.quiz1_container input{
+    padding:15px 30px 0px 30px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+    text-align:center;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+}
+.quiz1_container button{
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    border-radius: 50px;
+   border: none;
+transition: 0.4s all;
+color:rgb(224, 34, 91);
+
+}
+a{
+    color:blueviolet;
+    text-decoration: none;
+}
+.quiz1_container button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.quiz1_container input:focus,
+.quiz1_container button:focus{
+    outline: none;
+}
+.quiz{
+    background-color: #fff;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,0.4);
+    
+}
+.quiz_header{
+    background-color:rgb(243, 233, 233);
+    flex: 50px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+    z-index: 1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz_header .welcometext{
+    padding-left: 10px;
+}
+.quiz_header .timer{
+background-color: rgb(224, 34, 91);
+width:50px;
+height:100%;
+align-items: center;
+display:flex;
+color:#fff;
+padding: 0 5px;
+}
+.quiz_body{
+    background: rgb(214, 218, 214);
+    flex:100%;
+}
+.questions{
+    padding: 30px;
+}
+.options{
+    padding-left: 30px;
+    list-style-type:none;
+}
+.option{
+    background-color: #fff;
+    width:400px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    font-size: 22px;
+    border-radius: 30px;
+    border:2px solid transparent;
+    transition: 0.1s all;
+}
+.option:hover{
+    border:2px solid rgb(224, 34, 91);
+    cursor:pointer;
+}
+.nextbtn{
+    padding:16px 30px;
+    background-color:rgb(224, 34, 91);
+    margin-top: 30px;
+    color:#fff;
+    border-radius: 30px;
+    border:none;
+    font-size: 22px;
+    margin-left: 30px;
+    box-shadow: 0 3px 4px 1px rgba(0,0,0,0.4);
+
+}
+.nextbtn:hover{
+cursor: pointer;
+background-color: #fff;
+color: rgb(224, 34, 91);
+box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+}
+.active{
+    background-color: rgb(224, 34, 91);
+    color: #fff;
+}
+.award_icon{
+    font-size: x-large;
+    color: #fff;
+}
+
+
+.user_name,.user_point,.user_time{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    display:block;
+    font-size: larger;
+}
+ @media screen and (max-width:700px){
+    /*change size of width of quiz_container for mobile responsive*/
+    .quiz_container{
+        width: 300px;
+    
+    }
+    /*change fontsize of user input*/
+    .quiz1_container input{
+        font-size: medium;
+        border-bottom: 1px solid #fff;
+    }
+    .quiz1_container button{
+        font-size: medium;
+    }
+    .quiz{
+        width:260px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        height: 450px;
+        box-shadow: 0 3px 10px 1px rgba(0,0,0,0.4);
+        
+    }
+    .quiz_header{
+        flex: 40px;
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.4);
+    }
+    .quiz_header .welcometext{
+        font-size: medium;
+        padding-left: 4px;
+    }
+    .quiz_header .timer{
+        width:40px;
+        padding: 0 3px;
+    }
+    .quiz_body{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .questions{
+        padding:10px;
+        font-size: large;
+    }
+    .options{
+        padding-left: 5px;
+    }
+    .option{
+        width:250px;
+        padding: auto;
+        font-size: small;
+        border:1px solid transparent;
+        transition: 0.1s all;
+    }
+    .option:hover{
+        border:1px solid rgb(224, 34, 91);
+    }
+    .nextbtn{
+        padding:8px 10px;
+        font-size: medium;
+        margin: 30px 70px;
+    }
+}
