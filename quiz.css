@@ -133,9 +133,13 @@ box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
     background-color: rgb(224, 34, 91);
     color: #fff;
 }
-.award_icon{
-    font-size: x-large;
+.award_icon{ 
+    font-size: 80px;
     color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    margin-left:  90px;
 }
 
 
@@ -179,6 +183,7 @@ box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
     .quiz_header .timer{
         width:40px;
         padding: 0 3px;
+        font-size: small;
     }
     .quiz_body{
         border-bottom-left-radius: 4px;
